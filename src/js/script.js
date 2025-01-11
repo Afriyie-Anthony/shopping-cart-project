@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <p>${cards.desc}</p>
         <div class="btn">
-          <button class="addToCart">Add to cart</button>
+          <button class="add-to-cart">Add to cart</button>
         </div>
       </div>
     </div>
@@ -99,11 +99,3 @@ function myfunction(smallimg){
   var fullimg = document.getElementById("imageBox");
   fullimg.src =smallimg.src;
 }
-
-// add to cart
-let cart = [];
-
-// Add eventlistener to add to cart
-
-
-// Single image preview 
