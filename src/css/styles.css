@@ -238,8 +238,6 @@ main .sidebar ul li{
 .cart_item .rmv_btn{
     padding: 15px 20px;
     font-size: 20px;
-    background: #111;
-    color: #fff;
     cursor: pointer;
     transition: .5s ease-in;
 }
@@ -263,8 +261,6 @@ main .sidebar ul li{
     width: 50%;
     margin: 20px auto;
     font-size: 18px;
-    background-color: #111;
-    color: #fff;
     transition: .5s ease-in;
 }
 
@@ -279,7 +275,7 @@ main .sidebar ul li{
 /* mobile responsiveness */
 @media (max-width: 499px){
   header{
-    display: none;
+    display: block;
     align-items: start;
     justify-content: space-between;
     padding: 30px 10px;
@@ -295,6 +291,17 @@ main .sidebar ul li{
   }
   nav .search-bar input{
     width: 100%;
+  }
+  nav .cart-and-user p{
+    position: absolute;
+    top: 56.5%;
+    right: 85.5%;
+    background-color: red;
+    text-align: center;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
   }
   main{
     display: flex;
