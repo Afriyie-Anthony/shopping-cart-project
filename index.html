@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header>
+      <!-- logo container -->
+      <div>
+        <h1>Logo</h1>
+      </div>
+
+      <!-- navigation items -->
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- search bar -->
+        <div class="search-bar">
+          <input type="text" placeholder="Search for products..." />
+        </div>
+
+        <!-- cart and user -->
+        <div class="cart-and-user">
+          <i class="bx bx-cart-alt"></i>
+          <p>1</p>
+          <img src=".//public/images/avatar.png" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- products  -->
+    <main class="main">
+      <!-- sidebar -->
+      <section class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+          <li>
+            <input type="checkbox" value="" />
+            Men
+          </li>
+          <li>
+            <input type="checkbox" value="" />
+            Women
+          </li>
+          <li>
+            <input type="checkbox" value="" />
+            Children
+          </li>
+        </ul>
+      </section>
+      <section class="products">
+        <h1>Products</h1>
+
+        <div class="products-cards" id="products-cards">
+         
+        </div>
+
+        <!-- <div class="view-all-button">
+          <button>View all products</button>
+        </div> -->
+      </section>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
