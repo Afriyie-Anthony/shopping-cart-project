@@ -19,7 +19,7 @@ let generateCartItems = () => {
       <div class="cart_item" id=prodcut-id-${id}>
                 <p>${name}</p>
          <div class='cart_item_img'>
-           <img width="200" src=${img} alt="" />
+           <img width="100" src=${img} alt="" />
          </div>
                 <p >$ ${price}</p>
       
