@@ -7,7 +7,7 @@ let generateShop = () => {
       let {id,name,price,desc,img} = x 
 
     return `
-           <div class="cards">
+           <div class="cards" id="details">
            <img src=${img} alt="" />
            <div class="details">
              <div class="name">
@@ -49,6 +49,12 @@ let calculate = () => {
 }
 
 
-calculate()
 
+calculate()
 generateShop()
+
+const closePopup = document.getElementById("close-popup")
+const Popup = document.getElementById("popup")
+closePopup.addEventListener("click", () => {
+  Popup.style.display = "none"
+})

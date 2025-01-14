@@ -33,6 +33,7 @@ let generateCartItems = () => {
 };
   generateCartItems();
 
+  
 let removeItem = (id) => {
   basket = basket.filter((x) => x.id != id);
   localStorage.setItem("data", JSON.stringify(basket));
