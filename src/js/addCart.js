@@ -33,12 +33,13 @@ let generateCartItems = () => {
 };
   generateCartItems();
 
-  
+
 let removeItem = (id) => {
   basket = basket.filter((x) => x.id != id);
   localStorage.setItem("data", JSON.stringify(basket));
   calculate();
   generateCartItems()
+  window.location.reload()
 };
 
 
@@ -50,10 +51,10 @@ let Total_amount = () => {
   label.innerHTML = `
     <div class='checkout_area'>
        <h2>Total Price : $ ${total_amount} </h2>
-       <button class='update' onClick=window.location.reload()>
-         Update cart
-       </button>
-       <button class='checkout'>Checkout</button>
+       <a href="../../index.html"> <button class='update' onClick=window.location.reload()>
+       Update cart
+     </button></a>
+       <a href="../html/checkout.html"><button class='checkout'>Checkout</button></a>
     </div>
   `
 };

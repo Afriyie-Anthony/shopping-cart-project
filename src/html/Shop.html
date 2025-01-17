@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop page</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  
+  <header>
+    <!-- logo container -->
+    <div>
+      <h1>Logo</h1>
+    </div>
+
+    <!-- navigation items -->
+    <nav>
+      <div class="nav-links">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- search bar
+        the search bar is to filter out products base on the special description  
+       -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products..." id="searchbar" />
+      </div>
+
+      <!-- cart and user 
+      the cart is displaying the number of products added to the cart
+      -->
+      <div class="cart-and-user">
+        <a href="../html/cart.html"><i class="bx bx-cart-alt"></i></a>
+        <p id="cart_amount">0</p>
+        <img src=".//public/images/avatar.png" alt="" />
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="products">
+      <h1>Products</h1>
+
+      <div class="products-cards" id="products-cards">
+       
+      </div>
+    </section>
+  </main>
+
+  <section id="searchproductslist" class="searchproductslist">
+
+  </section>
+
+ 
+</body>
+</html>
