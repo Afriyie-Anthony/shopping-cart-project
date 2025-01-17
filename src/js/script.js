@@ -109,7 +109,7 @@ let add_to_cart = (id, name, price, img) => {
 
   localStorage.setItem("data", JSON.stringify(basket));
 
-  calculate();
+  updateCart();
 };
 
 let updateCart = () => {
