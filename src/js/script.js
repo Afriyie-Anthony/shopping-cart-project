@@ -112,14 +112,14 @@ let add_to_cart = (id, name, price, img) => {
   calculate();
 };
 
-let calculate = () => {
+let updateCart = () => {
   let cart_icon = document.getElementById("cart_amount");
   let cart_amount = basket.length;
 
   cart_icon.innerHTML = cart_amount;
 };
 
-calculate();
+updateCart();
 generateShop();
 
 

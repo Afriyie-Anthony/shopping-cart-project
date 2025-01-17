@@ -3,12 +3,12 @@ let ShoppingCart = document.getElementById("shopping_cart");
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
-let calculate = () => {
+let updateCart = () => {
   let cartIcon = document.getElementById("cart_amount");
   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 };
 
-calculate();
+updateCart();
 
 let generateCartItems = () => {
   if (basket.length !== 0) {
