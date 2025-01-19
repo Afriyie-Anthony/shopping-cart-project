@@ -23,8 +23,8 @@
       <nav>
         <div class="nav-links">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./src/html/Shop.html">Shop</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -34,7 +34,7 @@
           the search bar is to filter out products base on the special description  
          -->
         <div class="search-bar">
-          <input type="text" placeholder="Search for products..." />
+          <input type="text" placeholder="Search for products..." id="searchbar" />
         </div>
 
         <!-- cart and user 
@@ -49,7 +49,7 @@
     </header>
 
     <!-- products  -->
-    <main class="main">
+    <main class="main" id="main">
       <!-- sidebar 
         this is used to filter out products
        -->
@@ -79,57 +79,23 @@
          
         </div>
 
-        <!-- <div class="view-all-button">
-          <button>View all products</button>
-        </div> -->
+        <div class="view-all-button">
+         <a href="./src/html/Shop.html"> <button>View all products</button></a>
+        </div>
       </section>
     </main>
 
+    <section id="searchproductslist" class="searchproductslist">
+
+    </section>
+
      <!-- popup container -->
   <section class="popup" id="popup">
-    <i class="bx bx-x" id="close-popup"></i>
-    <div class="products-details">
-      <div class="images">
-        <div class="bg-image">
-          <img id="imageBox" src="/public/images/image-product-1.jpg" alt="image">
-        </div>
-        <div class="small-image">
-          <span><img src="/public/images/product_4_1.png" onclick="myfunction(this)"></span>
-          <span><img src="/public/images/product_4_2.png" onclick="myfunction(this)"></span>
-          <div><img src="/public/images/product_4_2.png" onclick="myfunction(this)"></div>
-          <div><img src="/public/images/product_4_2.png" onclick="myfunction(this)"></div>
-        </div>
-      </div>
-  
-      <div class="text">
-        <small>Sneaker Company</small>
-        <h1> Fall Limited Edition <br> Sneakers</h1>
-        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
-          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-          <div class="price">
-            <span> $125.00</span>
-            <button> 50%</button>
-          </div>
-          <small class="small">$250.00</small> <br>
-          <div class="btn">
-          <form action="">
-            <button><i class="bx bx-minus"></i></button>
-            <label for="">0</label>
-            <button><i class="bx bx-plus"></i></button>
-          </form>
-            <div class="btn2">
-                <button>
-                  Add to cart
-                </button>
-            
-            </div>
-          </div>
-      </div>
-    </div>
+   
   </section>
   
 
     <script src="./src/js/data.js"></script>
-    <script src="./src/js/try.js"></script>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>
