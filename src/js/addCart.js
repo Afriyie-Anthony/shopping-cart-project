@@ -14,7 +14,7 @@ let generateCartItems = () => {
   if (basket.length !== 0) {
     return (ShoppingCart.innerHTML = basket
       .map((x) => {
-        let { id,name,price,item,img } = x;
+        let { id, name, price, item, img } = x;
         return `
       <div class="cart_item" id=prodcut-id-${id}>
                 <p>${name}</p>
@@ -26,22 +26,21 @@ let generateCartItems = () => {
         <button  class='rmv_btn'  onclick="removeItem(${id})">Remove</button>
       </div>
       `;
-      }).join(""));
-  }else {
+      })
+      .join(""));
+  } else {
     ShoppingCart.innerHTML = `<h3>Shopping cart is empty</h3>`;
   }
 };
-  generateCartItems();
-
+generateCartItems();
 
 let removeItem = (id) => {
   basket = basket.filter((x) => x.id != id);
   localStorage.setItem("data", JSON.stringify(basket));
   updateCart();
-  generateCartItems()
-  window.location.reload()
+  generateCartItems();
+  window.location.reload();
 };
-
 
 let Total_amount = () => {
   let total_amount = 0;
@@ -51,13 +50,14 @@ let Total_amount = () => {
   label.innerHTML = `
     <div class='checkout_area'>
        <h2>Total Price : $ ${total_amount} </h2>
+       <div class="check-btn">
        <a href="../../index.html"> <button class='update' onClick=window.location.reload()>
        Update cart
      </button></a>
-       <a href="../html/checkout.html"><button class='checkout'>Checkout</button></a>
+       <a href="../html/checkout.html"> <button class='checkout'>Checkout</button></a>
+       </div>
     </div>
-  `
+  `;
 };
 
 Total_amount();
-
