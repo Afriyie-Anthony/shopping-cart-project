@@ -15,8 +15,10 @@
 
     <header>
       <!-- logo container -->
-      <div>
+      <div class="logo">
         <h1>Logo</h1>
+        <i class="bx bx-x close"></i>
+        <i class="bx bx-menu open"></i>
       </div>
 
       <!-- navigation items -->
@@ -43,37 +45,44 @@
         <div class="cart-and-user">
           <a href="./src/html/cart.html"><i class="bx bx-cart-alt"></i></a>
           <p id="cart_amount">0</p>
-          <img src=".//public/images/avatar.png" alt="" />
+          <img src="./public/images/avatar.png" alt="" />
         </div>
       </nav>
     </header>
 
+    <!-- hero section -->
+    <section
+    class="hero">
+    <div class="hero-container">
+      <small class="">modern collection<i
+        class="bx bxs-flame"></i></small></small>
+      <h1 class="">
+        Elevate Your Look With Every Click Shop Today
+      </h1>
+      <p class="">
+        Discover quality and style with premium collection. Shop confidently
+        for unique, fashionable pieces that elevate your wardrobe!
+      </p>
+
+      <div class="btns">
+        <button class="latest-btn">
+          Latest Product
+        </button>
+        <button class="popular-btn">
+          Popular Product
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- our features -->
+  
+
     <!-- products  -->
     <main class="main" id="main">
-      <!-- sidebar 
-        this is used to filter out products
-       -->
-      <section class="sidebar">
-        <h2>Categories</h2>
-        <ul>
-          <li>
-            <input type="checkbox" value="" />
-            Men
-          </li>
-          <li>
-            <input type="checkbox" value="" />
-            Women
-          </li>
-          <li>
-            <input type="checkbox" value="" />
-            Children
-          </li>
-        </ul>
-      </section>
-
       <!-- this is where our product get displayed and is dynamic -->
       <section class="products">
-        <h1>Products</h1>
+        <h1>New <span>Arrivals</span></h1>
 
         <div class="products-cards" id="products-cards">
          
@@ -85,6 +94,20 @@
       </section>
     </main>
 
+    <section class="info">
+      <p>Repair Services</p>
+      <h1>Get Up to <span>70% off</span> All Kinds of Cloths</h1>
+      <button>Explore More</button>
+    </section>
+
+    <!-- testimonials section -->
+    <section class="testimonials-container">
+      <h1>What Our Customers Say</h1>
+      <div class="testimonials" id="testimonials">
+        
+      </div>
+    </section>
+
     <section id="searchproductslist" class="searchproductslist">
 
     </section>
@@ -93,8 +116,68 @@
   <section class="popup" id="popup">
    
   </section>
-  
 
+   <!-- newsletter section -->
+   <section class="newsletter">
+    <div class="newsletter-text">
+     <h1>Subscribe For Newsletters</h1>
+     <p>Get E-mails about our latest<span> products</span>  and <span>offers</span></p>
+    </div>
+    <div class="newsletter-input">
+     <input type="email" placeholder="Enter your email">
+     <button>Subscribe</button>
+    </div>
+   </section>
+   
+  
+<!-- footer section -->
+<footer>
+  <!-- company information -->
+  <div class="company-info">
+    <h2>Contact</h2>
+    <p>Address: <span>562 Tafo Road, Street 456, Kumasi</span></p>
+    <p>Phone: <span>+233 24 1234567 / +233 24 1234568</span></p>
+    <p>Hours: <span>9Am - 5Pm, Monday - Saturday</span></p>
+  </div>
+
+  <!-- nav links and user links -->
+  <div class="nav-link">
+    <div class="quick-link">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="user-links">
+      <h2>My Account</h2>
+      <ul>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./sign.html">Sign</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+        <li><a href="./wishlist.html">Wishlist</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- social media links -->
+  <div class="social-media">
+    <a href="#"> <i class='bx bxl-whatsapp'></i></a>
+    <a href="#"> <i class='bx bxl-facebook-circle'></i></a>
+    <a href="#"> <i class='bx bxl-instagram'></i></a>
+    <a href="#"> <i class='bx bxl-twitter'></i></a>
+  </div>
+</footer>
+
+  <!-- copyright section -->
+  <div class="copyright">
+    <p>&copy; 2024 <span>Company Name</span> All Rights Reserved
+  </div>
+
+  
     <script src="./src/js/data.js"></script>
     <script src="./src/js/script.js"></script>
   </body>

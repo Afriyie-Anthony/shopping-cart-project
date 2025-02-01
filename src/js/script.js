@@ -2,32 +2,29 @@ const shop = document.getElementById("products-cards");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 let generateShop = () => {
-  shop.innerHTML = shopItemsData.map((x) => {
-    // let { id, name, price, desc, img } = x;
-
+  shop.innerHTML = shopItemsData.map((c) => {
+   
     return `
            <div class="cards" id="details">
-           <img src=${x.img} alt="" />
+           <img src=${c.img} alt="" />
            <div class="details">
              <div class="name">
-               <p>${x.name}</p>
-               <p>$${x.price}</p>
+               <p>${c.name}</p>
+               <p>$${c.price}</p>
              </div>
-             <p></p>
              <div class="btn">
-             <button onclick ="add_to_cart('${x.id}','${x.name}','${x.price}','${x.img}')">Add to Cart </button>
-             <!-- Add data attributes to the View Details button -->
+             <button onclick ="add_to_cart('${c.id}','${c.name}','${c.price}','${c.img}')" class="add-to-cart">Add to Cart </button>
              <button class="view-details" 
-               data-name="${x.name}" 
-               data-desc="${x.desc}" 
-               data-price="${x.price}" 
-               data-img="${x.img}">
+               data-name="${c.name}" 
+               data-desc="${c.desc}" 
+               data-price="${c.price}" 
+               data-img="${c.img}">
                View Details
              </button>
              </div>
            </div>
          </div>
-    `;
+    `
   });
  
   //adding event listener to view button
@@ -72,9 +69,6 @@ function showPopup(name,img,desc,price){
          <small class="small">$250.00</small> <br>
          <div class="btn">
          <form action="">
-           <button id="minus"><i class="bx bx-minus"></i></button>
-           <label for="">0</label>
-           <button id="plus"><i class="bx bx-plus"></i></button>
          </form>
            <div class="btn2">
                <button>
@@ -171,3 +165,59 @@ searchBar.addEventListener('input', (e) => {
 })
 
 
+
+// testimonials
+
+const testimonial = [
+  {
+    "id": 1,
+    "name": "Anthony Afriyie" ,
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fuga voluptatum quidem, itaque ipsam quas non incidunt accusantium dolor, veniam tempora repellat aperiam ",
+    "img": "../../public/profile-image/profile5.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Adamu Fatima" ,
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fuga voluptatum quidem, itaque ipsam quas non incidunt accusantium dolor, veniam tempora repellat aperiam ",
+    "img": "../../public/profile-image/profile-3.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Michael Opoku" ,
+    "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fuga voluptatum quidem, itaque ipsam quas non incidunt accusantium dolor, veniam tempora repellat aperiam ",
+    "img": "../../public/profile-image/profile-1.jpg"
+  }
+]
+
+const testimonialContainer = document.getElementById('testimonials')
+
+document.addEventListener('DOMContentLoaded', () => {
+  const testimonialsCards = () => {
+    testimonial.forEach((test) => {
+      console.log(test)
+       
+      const cardHTML = `
+      <div class="customer-testimonial">
+      <img src="${test.img}" alt="">
+      <p class="message">${test.desc}</p>
+
+     <div class="name-rating">
+      <p>${test.name}</p>
+      <div class="rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star-half"></i>
+      </div>
+     </div>
+    </div>
+      `
+
+      testimonialContainer.innerHTML += cardHTML
+    })
+  }
+  testimonialsCards()
+
+})

@@ -12,7 +12,7 @@ let shopItemsData = [
   "name": "Mens  Fit T-Shirts ",
   "price": 22.3,
   "desc": "Lorem ipsum dolor sit amet consectetur adipisicing ",
-  "img": "../../public/images/product_2.png",
+  "img": "../../public/images/product_3.png",
   "gender" : "Men",
  
 }, {
@@ -32,7 +32,7 @@ let shopItemsData = [
   
 }, {
   "id": 5,
-  "name": "Solid Gold Petite Micropave ",
+  "name": "Men coat",
   "price": 168,
   "desc": "Lorem ipsum dolor sit amet consectetur adipisicing ",
   "img": "../../public/images/product_4_1.png",
@@ -40,7 +40,7 @@ let shopItemsData = [
   
 }, {
   "id": 6,
-  "name": "Solid Gold Petite Micropave ",
+  "name": "Ladies Official Wear",
   "price": 168,
   "desc": "Lorem ipsum dolor sit amet consectetur adipisicing ",
   "img": "../../public/images/product_5.png",
@@ -48,7 +48,7 @@ let shopItemsData = [
   
 }, {
   "id": 7,
-  "name": "White Gold Plated Princess",
+  "name": "Coat for Kids",
   "price": 9.99,
   "desc": "Lorem ipsum dolor sit amet consectetur adipisicing ",
   "img": "../../public/images/product_6.png",
@@ -56,7 +56,7 @@ let shopItemsData = [
 
 }, {
   "id": 8,
-  "name": "Pierced Owl  Steel Double",
+  "name": "Trousers",
   "price": 10.99,
   "desc": "Lorem ipsum dolor sit amet consectetur adipisicing ",
   "img": "../../public/images/product_7.png",
