@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us page</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <header>
+    <!-- logo container -->
+    <div class="logo">
+      <h1>Logo</h1>
+      <i class="bx bx-x close" id="close" aria-label="Open Menu"></i>
+      <i class="bx bx-menu open" id="open" aria-label="Close Menu"></i>
+    </div>
+
+    <!-- navigation items -->
+    <nav id="navitems">
+      <div class="nav-links">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="./Shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- search bar
+        the search bar is to filter out products base on the special description  
+       -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products..." id="searchbar" />
+      </div>
+
+      <!-- cart and user 
+      the cart is displaying the number of products added to the cart
+      -->
+      <div class="cart-and-user">
+        <a href="./cart.html"><i class="bx bx-cart-alt"></i></a>
+        <p id="cart_amount">0</p>
+        <img src="../../public/images/avatar.png" alt="" />
+      </div>
+    </nav>
+  </header>
+
+  <!-- contact us forms -->
+  <form action="" class="contact-us">
+    <h1>Get In Touch With Us</h1>
+    <p>For More Information About Our Product & Services. Please Feel Free To Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
+   <div>
+    <label for="name">Your Name</label>
+    <input type="text" placeholder="Anthony Afriyie" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" placeholder="example@gmail.com" required>
+
+    <label for="message">Message</label>
+    <textarea name="message" id="" placeholder="Enter Your Message here" required></textarea>
+
+    <input type="submit" value="Submit" class="submit-btn ">
+   </div>
+  </form>
+
+   <!-- footer section -->
+<footer>
+  <!-- company information -->
+  <div class="company-info">
+    <h2>Contact</h2>
+    <p>Address: <span>562 Tafo Road, Street 456, Kumasi</span></p>
+    <p>Phone: <span>+233 24 1234567 / +233 24 1234568</span></p>
+    <p>Hours: <span>9Am - 5Pm, Monday - Saturday</span></p>
+  </div>
+
+  <!-- nav links and user links -->
+  <div class="nav-link">
+    <div class="quick-link">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="user-links">
+      <h2>My Account</h2>
+      <ul>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./sign.html">Sign</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+        <li><a href="./wishlist.html">Wishlist</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- social media links -->
+  <div class="social-media">
+    <a href="#"> <i class='bx bxl-whatsapp'></i></a>
+    <a href="#"> <i class='bx bxl-facebook-circle'></i></a>
+    <a href="#"> <i class='bx bxl-instagram'></i></a>
+    <a href="#"> <i class='bx bxl-twitter'></i></a>
+  </div>
+</footer>
+
+  <!-- copyright section -->
+  <div class="copyright">
+    <p>&copy; 2024 <span>Company Name</span> All Rights Reserved
+  </div>
+
+  <script src="../js/contact.js"></script>
+</body>
+</html>

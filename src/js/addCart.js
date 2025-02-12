@@ -21,7 +21,7 @@ let generateCartItems = () => {
          <div class='cart_item_img'>
            <img width="100" src=${img} alt="" />
          </div>
-                <p >$ ${price}</p>
+          <p >$ ${price}</p>
       
         <button  class='rmv_btn'  onclick="removeItem(${id})">Remove</button>
       </div>

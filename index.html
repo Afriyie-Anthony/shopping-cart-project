@@ -12,22 +12,20 @@
   </head>
   <body>
     <!-- navigation bar -->
-
     <header>
       <!-- logo container -->
       <div class="logo">
         <h1>Logo</h1>
-        <i class="bx bx-x close"></i>
-        <i class="bx bx-menu open"></i>
+        <i class="bx bx-x close" id="close" aria-label="Open Menu"></i>
+      <i class="bx bx-menu open" id="open" aria-label="Close Menu"></i>
       </div>
 
       <!-- navigation items -->
-      <nav>
+      <nav id="navitems">
         <div class="nav-links">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./src/html/Shop.html">Shop</a></li>
-            <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -165,7 +163,7 @@
 
   <!-- social media links -->
   <div class="social-media">
-    <a href="#"> <i class='bx bxl-whatsapp'></i></a>
+    <a href="#" class=""><i class='bx bxl-whatsapp' class="social-media-icons"></i></a>
     <a href="#"> <i class='bx bxl-facebook-circle'></i></a>
     <a href="#"> <i class='bx bxl-instagram'></i></a>
     <a href="#"> <i class='bx bxl-twitter'></i></a>
