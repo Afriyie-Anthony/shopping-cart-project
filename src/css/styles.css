@@ -9,12 +9,17 @@ header{
   gap: 50px;
   justify-content: space-around;
   padding: 30px 0;
-  background-color: #000;
+  background-color: #041e42;
   color: #fff;
   /* position: fixed;
   top: 0;
   z-index: 999; */
   width: 100%;
+}
+.logo{
+  i{
+    display: none;
+  }
 }
 
 nav{
@@ -63,7 +68,7 @@ nav .cart-and-user i{
 nav .cart-and-user p{
   position: absolute;
   top: 28px;
-  right: 11%;
+  right: 12.5%;
   background-color: red;
   text-align: center;
   color: white;
@@ -83,9 +88,9 @@ nav .cart-and-user img{
   background-position: center;
   background-size: cover;
   height: 80vh;
-  width: 90%;
+  width: 98%;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 10px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -133,7 +138,7 @@ nav .cart-and-user img{
     }
 
     .popular-btn{
-      background-color: #364fc7;
+      background-color: #041e42;
       border: none;
       height: 50px;
       width: 180px;
@@ -575,7 +580,7 @@ footer .social-media{
 }
 
 
-* cart page  */
+ /* cart page  */
 
 .cart_page{
     padding: 20px 50px;
@@ -598,6 +603,25 @@ footer .social-media{
 
      .cart_item_img{
       flex: 1;
+
+      img{
+        border-radius: 10px;
+        border: 1px solid #364fc7;
+      }
+     }
+     .quantity{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button{
+        text-align: center;
+        padding: 10px;
+      }
+      p{
+        width: 100%;
+      }
      }
 }
 
@@ -733,6 +757,13 @@ footer .social-media{
     outline: none;
   }
 }
+.submit-method{
+  input{
+    background: #364fc7;
+    color: white;
+    border: none;
+  }
+}
 
 
 
@@ -787,6 +818,91 @@ footer .social-media{
  background-color: whitesmoke;
 }
 
+.faq{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 90px;
+
+  h1{
+    font-size: 30px;
+  }
+  p{
+    font-size: 19px;
+    width: 650px;
+    text-align: center;
+  }
+}
+.details-group-example{
+
+  sl-details{
+    width: 600px;
+  }
+}
+
+/* contact us page css styling  */
+.contact-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0;
+  
+  h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+    text-align: center;
+  }
+  p{
+    width: 700px;
+    text-align: center;
+    font-size: 20px;
+    color: #475569;
+    padding-bottom: 50px;
+  }
+
+ div{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  label{
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  input{
+    width: 350px;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid #aeadad;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  textarea{
+    height: 150px;
+    padding: 10px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid #aeadad;
+  }
+
+  .submit-btn{
+    width: 150px;
+    background-color: #364fc7;
+    color: white;
+    font-weight: 700;
+
+  }
+ }
+}
 
 /* mobile responsiveness */
 @media (max-width: 499px){
@@ -804,28 +920,31 @@ footer .social-media{
     i{
       font-size: 50px;
     }
-    .close{
-      display: none;
+    .open{
+      display: flex;
     }
   }
   nav{
     display: none;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    transition: 0.5s ease-in;
 
   }
   nav .nav-links ul{
     display: flex;
     flex-direction: column;
+    align-items: start;
+    padding: 50px 0;
   }
   nav .search-bar input{
     width: 350px;
+    margin: 20px 0;
   }
   nav .cart-and-user p{
     position: absolute;
-    top: 66.5%;
-    right: 53.5%;
+    top: 60.5%;
+    right: 85.5%;
     background-color: red;
     text-align: center;
     color: white;
@@ -950,6 +1069,10 @@ footer .social-media{
     h1{
       font-size: 2.5rem;
     }
+
+    .social-media-icons{
+      text-decoration: none;
+    }
   }
   .testimonials-container {
     padding: 20px 20px;
@@ -986,5 +1109,37 @@ footer .social-media{
     gap: 40px;
     padding: 20px 20px;
     flex-direction: column;
+  }
+  .faq{
+    h1{
+      font-size: 25px;
+      text-align: center;
+    }
+    p{
+      width: 340px;
+    }
+  }
+  .details-group-example{
+
+    sl-details{
+      width: 350px;
+    }
+  }
+
+  .contact-us{
+    h1{
+      font-size: 35px;
+    }
+    p{
+      width: 100%;
+    }
+
+    input{
+      width: 330px;
+    }
+
+    textarea{
+      width: 350px;
+    }
   }
 }

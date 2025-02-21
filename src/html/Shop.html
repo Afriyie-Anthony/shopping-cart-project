@@ -9,23 +9,29 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css" />
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
+
+    
 </head>
 <body>
   
   <header>
     <!-- logo container -->
-    <div>
+    <div class="logo">
       <h1>Logo</h1>
+      <i class="bx bx-x close" id="close" aria-label="Open Menu"></i>
+      <i class="bx bx-menu open" id="open" aria-label="Close Menu"></i>
     </div>
 
     <!-- navigation items -->
-    <nav>
+    <nav id="navitems">
       <div class="nav-links">
         <ul>
           <li><a href="../../index.html">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/src/html/Shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
 
@@ -40,7 +46,9 @@
       the cart is displaying the number of products added to the cart
       -->
       <div class="cart-and-user">
-        <a href="../html/cart.html"><i class="bx bx-cart-alt"></i></a>
+        <a href="./cart.html">
+          <i class="bx bx-cart-alt"></i>
+        </a>
         <p id="cart_amount">0</p>
         <img src="../../public/images/avatar.png" alt="" />
       </div>
@@ -88,6 +96,48 @@
           Reiciendis natus Lorem ipsum dolor sit,</p>
       </div>
     </div>
+  </section>
+
+  <!-- faq section -->
+  <section class="faq">
+    <h1 class="head">Frequently Asked <span>Questions</span></h1>
+    <p class="description">Here you’ll find answers to the most common questions about our products and services. If you don't find what you're looking for, feel free to contact us!</p>
+
+    <div class="details-group-example">
+      <sl-details summary="What products do you sell">
+        We offer  clothing All of our products are carefully selected to ensure the best quality and customer satisfaction.
+      </sl-details>
+    
+      <sl-details summary="How do I place an order?">
+        Simply browse through our website, select the items you want to purchase, and click "Add to Cart." When you're ready, click on the cart icon and proceed to checkout. You'll be asked to enter your shipping information and payment details to complete your order.
+      </sl-details>
+    
+      <sl-details summary="How can I track my order?">
+        Once your order has been shipped, you'll receive a tracking number via email. You can use this number to track your package on the carrier's website.
+      </sl-details>
+      
+      <sl-details summary="Can I modify or cancel my order?">
+        We process orders quickly to get them to you as soon as possible, so we are only able to make changes or cancellations within a short window after the order is placed. Please contact our customer support team immediately if you need assistance.
+      </sl-details>
+    </div>
+    
+    <script>
+      const container = document.querySelector('.details-group-example');
+    
+      // Close all other details when one is shown
+      container.addEventListener('sl-show', event => {
+        if (event.target.localName === 'sl-details') {
+          [...container.querySelectorAll('sl-details')].map(details => (details.open = event.target === details));
+        }
+      });
+    </script>
+    
+    <style>
+      .details-group-example sl-details:not(:last-of-type) {
+        margin-bottom: var(--sl-spacing-2x-small);
+      }
+    </style>
+    
   </section>
 
 
